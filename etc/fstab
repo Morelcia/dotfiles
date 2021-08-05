@@ -20,5 +20,8 @@ UUID=e16ae954-8e27-4243-a9d6-6e9ce28a2f30	/snapshots	btrfs     	rw,noatime,compr
 # /dev/mapper/cryptroot LABEL=apricot
 UUID=e16ae954-8e27-4243-a9d6-6e9ce28a2f30	/var/log  	btrfs     	rw,noatime,compress=zstd:3,ssd,space_cache,commit=120,subvolid=259,subvol=@var_log	0 0
 
+# tmpfs
+tmpfs /tmp tmpfs defaults,nosuid 0 0
+
 # nyan
 UUID=d33701e3-0e42-472f-9326-ea93a3d79f1a /mnt/weedbanger ext4 defaults 0 2
